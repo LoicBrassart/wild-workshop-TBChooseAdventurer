@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TB Display Room</title>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+</head>
+<body>
+<div id="container">
+    <h1>MonTitre</h1>
+    <input id="search" type="text" placeholder="Recherche"/>
+    <div id="gallery">
+    </div>
+    <div id="focus">
+        <form onsubmit="return false;">
+            <input type="text" id="formAuthNewKey" placeholder="Votre clé d'authentification">
+            <input type="button" id="formAuthChangeKey" value="Changer la clé !">
+        </form>
+        <figure class="polaroid big">
+            <div class="imgBgnd big">
+                <img src="#"/>
+            </div>
+            <figcaption></figcaption>
+        </figure>
+        <div id="infoBox">
+            <h1>Name</h1>
+            <p>Personal data</p>
+        </div>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

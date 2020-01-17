@@ -1,0 +1,105 @@
+body {
+    background-color: #3d3d3d;
+}
+.vignette {
+    width: 100px;
+    box-sizing:border-box;
+    border: 5px solid whitesmoke;
+    filter: grayscale(100%);
+}
+.vignette:hover {
+    border:none;
+    filter: none;
+}
+.hidden {
+    display: none;
+}
+
+/* -------------------------------------- Zones -------------------------------------- */
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#focus {
+    height: 1000px;
+}
+
+#infoBox {
+    background: url('../img/carnet.png') no-repeat;
+    width: 875px;
+    height: 100%;
+    margin-left: 400px;
+    text-align: center;
+}
+#infoBox h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 5em;
+}
+
+
+/* -------------------------------------- Polaroids -------------------------------------- */
+
+#container {
+    height: 100%;
+    width: 100%;
+    background: url(http://garchitecture.ca/php/images/headers/wood.jpg) repeat;
+    padding-top: 20px;
+}
+#gallery {
+    width: 800px;
+    margin: auto;
+}
+.imgBgnd {
+    background-color:black;
+    width:150px;
+}
+.polaroid {
+    float: left;
+    position: relative;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px;
+    margin: 0;
+    box-shadow: 1px 2px 3px black;
+    font-family: 'Permanent Marker', cursive;
+}
+.polaroid img {
+    height: 150px;
+    margin: 0;
+}
+#gallery figure:hover {
+    box-shadow: 5px 10px 100px black;
+    z-index: 5;
+}
+
+/* -------------------------------------- Big Polaroids -------------------------------------- */
+.imgBgnd.big {
+    background-color:black;
+    width:300px;
+}
+.polaroid.big {
+    font-size: 30px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 1px 2px 3px black;
+}
+.polaroid.big img {
+    height: 300px;
+    margin: 0;
+}
+#focus figure:hover {
+    box-shadow: 1px 2px 3px black;
+}
+
+/* -------------------------------------- Thumbs grayscale -------------------------------------- */
+.thumb img {
+    filter: grayscale(100%);
+}
+.thumb img:hover {
+    filter: none;
+}
+
+
